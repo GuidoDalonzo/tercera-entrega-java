@@ -27,6 +27,8 @@ height: 50px;
 
 
 
+
+
 .tituloUno {
     color: rgb(255, 255, 255);
     font-family: 'EB Garamond', serif;
@@ -54,8 +56,18 @@ height: 50px;
 
 
 td {
+    color: rgb(255, 24, 24);
+    font-family: 'Tajawal', sans-serif;
+    font-style: italic;
     font-style: oblique;
 }
+
+th {
+    color: rgb(255, 24, 24);
+    font-family: 'Tajawal', sans-serif;
+    font-style: italic;
+}
+
 .ultimo {
     font-family: 'Times New Roman', Times, serif;
     color: red;
@@ -106,14 +118,14 @@ td {
     
 }
 .nosotrosDos {
-   display: inline-block;
+   display: flex;
+   justify-content: center;
     width: 700px;
     height: auto;
-    float: right;
     line-height: 35px;
-    text-align: left;
+    text-align: center;
     font-style: italic;
-    color: rgb(236, 73, 68);
+    color: rgb(255, 255, 255);
 }    
 
 .fondo {
@@ -121,6 +133,133 @@ td {
 
 }
 
+#wrapper {
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#botonFlecha {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #ffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#botonFlecha :active{
+    background: #cc2333;
+}
+
+
+.stars-outer {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .stars-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+  }
+  
+  .stars-outer::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #ccc;
+  }
+  
+  .stars-inner::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #f8ce0b;
+  }
+  
+  
+
+
+
+
+
+
+  #background {
+    background: url('http://payload71.cargocollective.com/1/3/111325/3721041/ico_sphere.gif') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: fixed;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    text-align:center;
+  }
+  body{
+  background: url('https://bit.ly/1sQjfwj') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: fixed;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+  }
+  #sphere{
+    color:white;
+    font-family:Droid sans;
+    font-size:100px;
+    position:relitive;
+    text-align:center;
+    margin-top:200px;
+    height:100px;
+    width:100px;
+    opacity:1.0;
+    z-index:10;
+  }
+  #sphere2 {
+    color:white;
+    font-family:Droid sans;
+    font-size:100px;
+    position:relitive;
+    text-align:center;
+    margin-top:200px;
+    height:100px;
+    width:100px;
+    opacity:0.2;
+    z-index:11;
+  }
+  #fadein {
+    color:white;
+    font-family:Droid sans;
+    font-size:100px;
+    position:relitive;
+    text-align:center;
+    margin-top:200px;
+    height:100px;
+    width:100px;
+    opacity:0.2;
+  }
+
+  
 
 
 /*TABLET*/

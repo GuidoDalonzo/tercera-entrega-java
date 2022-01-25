@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  lang="en">
+
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -7,75 +9,78 @@
     <meta name="keywords" content="fotografia, video, portfolio, edicion, profesional">
     <meta name="description" content="Portfolio profesional de fotografia y video del licenciado en produccion audiovisual Guido D'Alonzo">
         
-    <!-- MDB icon -->
+   
     <link rel="icon" href="media/yakuza.jpg" type="image/x-icon" />
-    <!-- Font Awesome -->
+   
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
-    <!-- Google Fonts Roboto -->
+   
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
     />
     <title>dalonzo.ph portfolio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&family=Montserrat:wght@200&family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!-- MDB -->
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:700' rel='stylesheet' type='text/css'>
+   
     <link rel="stylesheet" href="css/mdb.min.css" />
   </head>
-  
+  <div class="loading" id="background"></div>
+    <div class="home" id="homep">
+      <p class="home" id="sphere">Guido D'Alonzo</p>
+    </div>,
+      <p class="home" id="sphere2">Guido D'Alonzo</p>
+    <h1 id=fadein>Guido D'Alonzo</h1>
 <header>
 
   <h1 class="tituloUno animate__animated animate__bounce ">Guido D'Alonzo </h1>
   <h2 class="tituloDos animate__animated animate__bounceInLeft ">Fotografia, video y edicion profesional</h2> 
   <p class="subtitulo animate__animated animate__bounceInLeft ">mas de 5 años de experiencia en el medio</p>
 </header>
+<body class="fondo">
 
-  <body class="animate__animated animate__zoomIn">
-    <!-- Start your project here-->
-    <body class="fondo">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <!-- Container wrapper -->
-            <div class="container-fluid">
-              <!-- Toggle button -->
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-mdb-toggle="collapse"
-                data-mdb-target="#navbarCenteredExample"
-                aria-controls="navbarCenteredExample"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <i class="fas fa-bars"></i>
-              </button>
-          
-              <!-- Collapsible wrapper -->
-              <div
-                class="collapse navbar-collapse justify-content-center"
-                id="navbarCenteredExample"
-              >
-                <!-- Left links -->
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="Foto.html">Fotografia</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Video.html">Video</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Edicion.html" tabindex="-1" aria-disabled="true"
-                      >Edicion</a
-                    >
-                  </li>
-                </ul>
-                <!-- Left links -->
-              </div>
-              <!-- Collapsible wrapper -->
-            </div>
-            <!-- Container wrapper -->
-          </nav>
+  <button id="botonFlecha">
+    <i class="material-icons">arrow_upward</i>
+  </button>
+<!--   <script src="script.js"></script> -->
+
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Inicio</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Video.html">Video</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Foto.html">Fotografia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Edicion.html">Edicion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Eventos.html" tabindex="-1" aria-disabled="true"
+            >Nosotros</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
   
       <!-- Carousel wrapper -->
 <div
@@ -142,7 +147,7 @@ data-mdb-ride="carousel"
   <!-- Single item -->
   <div class="carousel-item">
     <img
-      src="media/fotos/bandas/DSC09033.jpg"
+      src="media/fotos/bandas/banda3.jpg"
       class="d-block w-100"
       alt="..."
     />
@@ -213,7 +218,7 @@ data-mdb-ride="carousel"
     <!-- Single item -->
     <div class="carousel-item active">
       <video class="img-fluid" autoplay loop controls muted>
-        <source src="media/videos/after movies/PRUEBA 3.mp4" />
+        <source src="media/videos/after movies/prueba3.mp4" />
       </video>
       <div class="carousel-caption d-none d-md-block">
         <h5>MUSICA&CULTURE 3.2 AFTERMOVIE</h5>
@@ -226,7 +231,7 @@ data-mdb-ride="carousel"
     <!-- Single item -->
     <div class="carousel-item">
       <video class="img-fluid" autoplay loop controls muted>
-        <source src="media/videos/videoclips/FINAL 2.mp4" type="video/mp4" />
+        <source src="media/videos/videoclips/ema1.mp4" type="video/mp4" />
       </video>
       <div class="carousel-caption d-none d-md-block">
         <h5>EMANUEL CARPINTIERI - SIEMPRE HAY ALGO MAS DE DIOS</h5>
@@ -240,7 +245,7 @@ data-mdb-ride="carousel"
     <div class="carousel-item">
       <video class="img-fluid" autoplay loop controls muted>
         <source
-          src="media/videos/otap sessions/spaguetti final 2.mp4"
+          src="media/videos/otap sessions/spaguetti-final-2.mp4"
           type="video/mp4"
         />
       </video>
@@ -410,50 +415,149 @@ data-mdb-ride="carousel"
         </div>
       </div>
     </section>
-    <!-- Section: Modals -->
+
   </section>
-  <!-- Modal gallery -->
 
+  <section class="mast">
+    <figure class="mast__bg" style="background-image:url(https://unsplash.it/1800/800?image=893)"></figure>
+    <header class="mast__header">
+      <h1 class="mast__title js-spanize">Incoming Transmission</h1> 
+      <hr class="sep"/>
+      <p class="mast__text js-spanize">
+This is a story, all about how, 
+My life got twisted upside down. 
+So I'd like to tell a story, just sit right there. 
+And I'll tell you how I became the prince of Bel Air.</p>
 
+    </header>
+  </section>
+  
+<!-- <h1 class="ultimo"> RULETA </h1> -->
+  <div id="wrapper">
+    
+
+    <button class="btn btn-primary btn-lg" href='javascript:;' onclick="confirmar()" role="button">click</button>
+
+    <button  style="background-color: red; margin: 20px; " class="btn btn-primary btn-lg" href='javascript:;' onclick="confirmar2()" role="button">click</button>
+
+    <button  style="background-color: green;  " class="btn btn-primary btn-lg" href='javascript:;' onclick="confirmar3()" role="button">click</button>
+
+  </div>
+<div>
+  <div class="container mt-5">
+    <div class="form-group">
+      <select id="product-select" class="form-control custom-select">
+          <option value="0" disabled selected>Selecione Evento</option>
+          <option value="sony">Videoclips</option>
+          <option value="samsung">Otap Sessions</option>
+          <option value="vizio">MUSICA&CULTURE</option>
+          <option value="panasonic">Casamientos</option>
+          <option value="phillips">Redes</option>
+        </select>
+    </div>
+    <div class="form-group">
+      <input type="number" id="rating-control" class="form-control" step="0.1" max="5" placeholder="Rate 1 - 5" disabled>
+    </div>
+  
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Eventos</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="sony">
+          <td>Videoclips</td>
+          <td>
+            <div class="stars-outer">
+              <div class="stars-inner"></div>
+            </div>
+            <span class="number-rating"></span>
+          </td>
+        </tr>
+        <tr class="samsung">
+          <td>Otap Sessions</td>
+          <td>
+            <div class="stars-outer">
+              <div class="stars-inner"></div>
+            </div>
+            <span class="number-rating"></span>
+          </td>
+        </tr>
+        <tr class="vizio">
+          <td>MUSICA&CULTURE</td>
+          <td>
+            <div class="stars-outer">
+              <div class="stars-inner"></div>
+            </div>
+            <span class="number-rating"></span>
+          </td>
+        </tr>
+        <tr class="panasonic">
+          <td>Casamientos</td>
+          <td>
+            <div class="stars-outer">
+              <div class="stars-inner"></div>
+            </div>
+            <span class="number-rating"></span>
+          </td>
+        </tr>
+        <tr class="phillips">
+          <td>Redes</td>
+          <td>
+            <div class="stars-outer">
+              <div class="stars-inner"></div>
+            </div>
+            <span class="number-rating"></span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
   </main>
   <footer class="bg-dark text-center text-white">
-    <!-- Grid container -->
+
     <div class="container p-4 pb-0">
-      <!-- Section: Social media -->
+
       <section class="mb-4">
   
-        <!-- Google -->
+
         <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
           ><i class="fab fa-google"></i
         ></a>
   
-        <!-- Instagram -->
+
         <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/dalonzo.ph/" role="button"
           ><i class="fab fa-instagram"></i
         ></a>
   
-        <!-- Linkedin -->
+
         <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/guidodalonzo/" role="button"
           ><i class="fab fa-linkedin-in"></i
         ></a>
   
       </section>
-      <!-- Section: Social media -->
+
     </div>
-    <!-- Grid container -->
+
   
-    <!-- Copyright -->
+
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2020 Copyright:
       <a class="text-white" href="https://mdbootstrap.com/">dalonzo.ph</a>
     </div>
-    <!-- Copyright -->
-  </footer>
-    <!-- End your project here-->
 
-    <!-- MDB -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!-- Custom scripts -->
+  </footer>
+
+
+    
+
+    
     <script type="text/javascript"></script>
+    <script src="script.js"></script>
   </body>
+
 </html>

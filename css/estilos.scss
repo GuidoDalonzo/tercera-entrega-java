@@ -1,0 +1,106 @@
+/*TABLET*/
+/*celular*/
+* {
+	margin: 0%;
+	padding: 0%;
+}
+#header {
+	margin: auto;
+	width: 350px;
+	font-family: 'EB Garamond', serif;
+}
+header {
+	background-image: url(22.jpg);
+	width: 100%;
+	height: 100px;
+}
+.segundoHeader {
+	background-image: url(color\ negro.png);
+	height: 50px;
+}
+.tituloUno {
+	color: rgb(255, 255, 255);
+	font-family: 'EB Garamond', serif;
+	font-style: italic;
+	line-height: 40px;
+	text-align: left;
+}
+.tituloDos {
+	color: rgb(6, 214, 214);
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	line-height: 20px;
+	text-align: left;
+}
+.subtitulo {
+	color: rgb(255, 24, 24);
+	font-family: 'Tajawal', sans-serif;
+	font-style: italic;
+	line-height: px;
+	text-align: left;
+}
+td {
+	font-style: oblique;
+}
+.ultimo {
+	font-family: 'Times New Roman', Times, serif;
+	color: red;
+	text-align: center;
+	text-decoration: underline;
+	line-height: 40px;
+}
+.video1 {
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.ultimoFotos {
+	font-family: 'Times New Roman', Times, serif;
+	color: red;
+	text-align: center;
+	text-decoration: underline;
+	line-height: 40px;
+}
+.nosotros {
+	font-family: 'Times New Roman', Times, serif;
+	color: red;
+	text-align: left;
+	text-decoration: underline;
+	line-height: 40px;
+}
+.bandaDos {
+	border-radius: 5%;
+}
+.bandaTres {
+	border-radius: 5%;
+}
+.nosotros1 {
+	display: flex;
+	flex-direction: row;
+	flex-flow: nowrap;
+	border-radius: 5%;
+}
+.nosotrosDos {
+	display: inline-block;
+	width: 700px;
+	height: auto;
+	float: right;
+	line-height: 35px;
+	text-align: left;
+	font-style: italic;
+	color: rgb(236, 73, 68);
+}
+.fondo {
+	background-image: url(32.jpg);
+}
+@media (min-width: 600px) and (max-width:1023px) {
+	.fondo {
+		background-image: url(12.png);
+	}
+}
+@media (min-width: 599px) {
+	.fondo {
+		background-image: url(22.jpg);
+	}
+}
