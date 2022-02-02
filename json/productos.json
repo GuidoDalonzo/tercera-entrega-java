@@ -1,0 +1,5 @@
+[
+    {"id":1,"tipo":"zapatilla","precio":1000},
+    {"id":2,"tipo":"remera","precio":500},
+    {"id":3,"tipo":"buzo","precio":1200}
+]

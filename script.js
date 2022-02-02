@@ -1,31 +1,4 @@
-/* 
-function leerDatos() {
-    return prompt("escoja un numero del 1-5");
-    
-}
-function validarDatos(datos) {
-    if (datos >= 1 || datos <= 5 ) {
-        return true
-    }
-    else return false
-}
-
-let opcion = leerDatos();
-let resultado = validarDatos */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// RULETA 
 class otapSessions {
     constructor(id, nombre, by,){
         this.id = id;
@@ -208,7 +181,7 @@ function confirmar3() {
 
 
 
-
+// FLECHA 
 
 const botonFlecha = document.querySelector("#botonFlecha");
 
@@ -222,7 +195,7 @@ const botonFlecha = document.querySelector("#botonFlecha");
 
 
 
-
+// ESTRELLAS 
 
 const ratings = {
     sony: 4.7,
@@ -285,8 +258,9 @@ const ratings = {
     }
   }
 
+// PAGINA DE CARGA 
 
-  $(document).ready(function(){
+/*   $(document).ready(function(){
     $(background).click(function(){
     $('#background').fadeOut('slow');  
       var background=$('#background');
@@ -297,9 +271,124 @@ const ratings = {
    });
   ('#fadein').click(function(){
     ('fadein').fadeIn(fast)
-  });
+  }); */
                     
+
+
+// TEXTO ANIMADO 
+
+
+function autoType(elementClass, typingSpeed){
+    var thhis = $(elementClass);
+    thhis.css({
+      "position": "relative",
+      "display": "inline-block"
+    });
+    thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+    thhis = thhis.find(".text-js");
+    var text = thhis.text().trim().split('');
+    var amntOfChars = text.length;
+    var newString = "";
+    thhis.text("|");
+    setTimeout(function(){
+      thhis.css("opacity",1);
+      thhis.prev().removeAttr("style");
+      thhis.text("");
+      for(var i = 0; i < amntOfChars; i++){
+        (function(i,char){
+          setTimeout(function() {        
+            newString += char;
+            thhis.text(newString);
+          },i*typingSpeed);
+        })(i+1,text[i]);
+      }
+    },1500);
+  }
   
+  $(document).ready(function(){
 
+    autoType(".type-js",800);
+  });
 
- 
+/* 
+BOTON */
+
+var basicTimeline = anime.timeline({
+    autoplay: false
+  });
+  
+  var pathEls = $(".check");
+  for (var i = 0; i < pathEls.length; i++) {
+    var pathEl = pathEls[i];
+    var offset = anime.setDashoffset(pathEl);
+    pathEl.setAttribute("stroke-dashoffset", offset);
+  }
+  
+  basicTimeline
+    .add({
+      targets: ".text",
+      duration: 1,
+      opacity: "0"
+    })
+    .add({
+      targets: ".button",
+      duration: 1300,
+      height: 10,
+      width: 300,
+      backgroundColor: "#2B2D2F",
+      border: "0",
+      borderRadius: 100
+    })
+    .add({
+      targets: ".progress-bar",
+      duration: 2000,
+      width: 300,
+      easing: "linear"
+    })
+    .add({
+      targets: ".button",
+      width: 0,
+      duration: 1
+    })
+    .add({
+      targets: ".progress-bar",
+      width: 80,
+      height: 80,
+      delay: 500,
+      duration: 750,
+      borderRadius: 80,
+      backgroundColor: "#71DFBE"
+    })
+    .add({
+      targets: pathEl,
+      strokeDashoffset: [offset, 0],
+      duration: 200,
+      easing: "easeInOutSine"
+    });
+  
+  $(".button").click(function() {
+    basicTimeline.play();
+  });
+  
+  $(".text").click(function() {
+    basicTimeline.play();
+  });
+
+  function ajax(){
+    const https = new XMLHttpRequest();
+    const url = 'https://pirateisfree.ytmnd.com/'
+
+    https.onreadystatechange = function(){
+      if(this.readyState == 4 && this.status == 200){
+        console.log(this.responseText);
+        document.getElementById("response").innerHTML = this.responseText;
+      }
+      
+    }
+    https.open("get", url);
+    https.send();
+  }
+
+  document.getElementById("boton").addEventListener("click" , function(){
+    ajax();
+  });
